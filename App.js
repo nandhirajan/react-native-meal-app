@@ -1,7 +1,10 @@
+//@refresh reset
 import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import * as Font from 'expo-font'
 import { AppLoading } from 'expo';
+
+import MealsNavigator from "./src/navigation/MealsNavigator";
 
 const fetchFonts = () => {
   return Font.loadAsync({
@@ -22,9 +25,10 @@ export default function App() {
     )
   }
   return (
-    <View style={styles.container}>
-      <Text>Welcome to meal app!</Text>
-    </View>
+    // <View style={styles.container}>
+    //   <Text>Welcome to meals test app!</Text>
+    // </View>
+    <MealsNavigator />
   );
 }
 
