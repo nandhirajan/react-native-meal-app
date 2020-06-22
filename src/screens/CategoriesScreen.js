@@ -1,9 +1,8 @@
 //@refresh reset
 import React from 'react';
-import { View, Text, Button, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
 
 import { CATEGORIES } from "../data/dummy-data";
-import Colors from "../constants/colors";
 
 const CategoriesScreen = props => {
     const renderGridItem = (itemData) => {
@@ -31,14 +30,6 @@ const CategoriesScreen = props => {
             renderItem={renderGridItem}
         />
     )
-}
-
-CategoriesScreen.navigationOptions = {
-    headerTitle: "Meal Categories",
-    headerStyle: {
-        backgroundColor: Colors.primaryColor
-    },
-    headerTintColor: "white"
 }
 
 const styles = StyleSheet.create({
